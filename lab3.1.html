@@ -5,40 +5,40 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Calculator v2</title>
     <style>
-        body{background: black; display:flex; justify-content: center;
+        body{ display:flex; justify-content: center;
         align-items: center; font-family: serif;, font-size:20px}
-        #calculator{width: 400px; border:5px solid green; border-radius: 10px;}
+        #calculator{background-image:url('ocean.jpg'); width: 400px; border:5px solid black; border-radius: 10px;}
         #result {background: grey; text-align:center; font-size: 2em; min-height: 2.5em; line-height: 2.5em; padding-right:0.5em; font-size:30px;}
         #buttons {display: flex; flex-wrap:wrap;}
-        button{margin: 0.5em; width: calc(25% -1e); background: blue; color:white; font-weight: bold; padding: 0.5em; font-size:35px;}
+        button{margin: 0.5em; width: calc(25% -1e); background: orange; color:white; font-weight: bold; padding: 0.5em; font-size:35px;}
     </style>
 </head>
 <body>
 
-<div id="calculator">
-    <div id="result"></div>
-    <div id="buttons">
-        <button class="numberButton" onClick="clickNumber(1)">1</button>
-        <button class="numberButton" onClick="clickNumber(2)">2</button>
-        <button class="numberButton" onClick="clickNumber(3)">3</button>
-        <button class="operatorButton" onClick="clickOperator('+')">+</button>
-        
-        <button class="numberButton" onClick="clickNumber(4)">4</button>
-        <button class="numberButton" onClick="clickNumber(5)">5</button>
-        <button class="numberButton" onClick="clickNumber(6)">6</button>
-        <button class="operatorButton" onClick="clickOperator('-')">-</button>
-
-        <button class="numberButton" onClick="clickNumber(7)">7</button>
-        <button class="numberButton" onClick="clickNumber(8)">8</button>
-        <button class="numberButton" onClick="clickNumber(9)">9</button>
-        <button class="operatorButton" onClick="clickOperator('/')">/</button>
-
-        <button class="equalsButton" onClick="showResult">=</button>
-        <button class="resetButton" onClick="clearResults()">CL</button>
-        <button class="operatorButton" onClick="clickOperator('*')">*</button>
+    <div id="calculator">
+        <div id="result">0</div>
+        <div id="buttons">
+            <button onClick="clickNumber(1)">1</button>
+            <button onClick="clickNumber(2)">2</button>
+            <button onClick="clickNumber(3)">3</button>
+            <button onClick="clickOperator('+')">+</button>
+            
+            <button onClick="clickNumber(4)">4</button>
+            <button onClick="clickNumber(5)">5</button>
+            <button onClick="clickNumber(6)">6</button>
+            <button onClick="clickOperator('-')">-</button>
+            
+            <button onClick="clickNumber(7)">7</button>
+            <button onClick="clickNumber(8)">8</button>
+            <button onClick="clickNumber(9)">9</button>
+            <button onClick="clickOperator('*')">*</button>
     
-</div>
-</div>
+            <button onClick="showResult()">=</button>
+            <button onClick="clickNumber(0)">0</button>
+            <button onClick="clearResult()">CL</button>
+            <button onClick="clickOperator('/')">/</button>
+        </div>
+    </div>
 
 <script src="js/calculator2.js"></script>
 
